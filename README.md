@@ -7,6 +7,10 @@
 
 This repo contains the HMMs for hallmarks genes (MCP, Portal, and TerL) used for the detection of crAss-like phages. This also has basic bash script (crAss.sh) that allows users to search through metagenomes/contigs for putative crAssphages using these profiles. The script will be updated on a regular basis and will soon be provided in the form of a nextflow pipeline.
 
+## Usage
+
+For the script to run successfully users need to install both [Prodigal](https://github.com/hyattpd/Prodigal) and [HMMER](http://hmmer.org/) beforehand.
+
 
 1. Retrieved Cressdnaviricota and Phixvirota protein sequences from [GenBank](https://www.ncbi.nlm.nih.gov/protein/?term=single+stranded+DNA+viruses);
 2. Clustered these at ```95%``` amino acid identity over ```90%```of the shortest sequence using [CD-HIT](https://www.bioinformatics.org/cd-hit/);
