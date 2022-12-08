@@ -27,7 +27,6 @@ Once done users may execute the crAssZA.sh script as follows:
 (crAss)[user@machine007]$ ./crAss.sh
 ```
 
-## Output
 
 Once executed, the script will run for a few seconds and set of output files will be generated. These will have extentions *faa and *hmmout that may require further manual inspection.
 
