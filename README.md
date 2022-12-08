@@ -7,7 +7,7 @@
 
 This repo contains the HMMs for hallmarks genes (MCP, Portal, and TerL) used for the detection of crAss-like phages. This also has basic bash script (crAss.sh) that allows users to search through metagenomes/contigs for putative crAssphages using these profiles. The script will be updated on a regular basis and will soon be provided in the form of a nextflow pipeline.
 
-The following document describes each field of hmm_meta.txt and sys_meta.txt, and how you can use your own HMMs and system models with PADLOC.
+
 1. Retrieved Cressdnaviricota and Phixvirota protein sequences from [GenBank](https://www.ncbi.nlm.nih.gov/protein/?term=single+stranded+DNA+viruses);
 2. Clustered these at ```95%``` amino acid identity over ```90%```of the shortest sequence using [CD-HIT](https://www.bioinformatics.org/cd-hit/);
 3. Compared representative sequences using all-vs-all blastp with evalue ```1e-5```;
