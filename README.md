@@ -11,12 +11,24 @@ This repo contains the HMMs for hallmarks genes (MCP, Portal, and TerL) used for
 
 For the script to run successfully users need to install both [Prodigal](https://github.com/hyattpd/Prodigal) and [HMMER](http://hmmer.org/) beforehand.
 
+To test if the depencies were installed and are in the same path, users may test the script using a contig (with .fasta extension) provided in the test directory. The script, contig file, as well as the HMM profiles need to be in the same directory. The HMM profiles require to get converted to binary compressed datafiles using hmmpress, using the following command:
 
-1. Retrieved Cressdnaviricota and Phixvirota protein sequences from [GenBank](https://www.ncbi.nlm.nih.gov/protein/?term=single+stranded+DNA+viruses);
-2. Clustered these at ```95%``` amino acid identity over ```90%```of the shortest sequence using [CD-HIT](https://www.bioinformatics.org/cd-hit/);
-3. Compared representative sequences using all-vs-all blastp with evalue ```1e-5```;
-4. The blastp results were further clustered using [MCL - Markov Clustering Algorithm](https://micans.org/mcl/) with the inflation ```1.5```;
-5. Clusters with proteins >= 10 representing replication initiator (Rep) and major capsid (VP1) were aligned using [mafft](https://mafft.cbrc.jp/alignment/software/) with the ```--auto``` parameter;
-6. Alignments were then used to create HMM profiles using [hmmer](http://hmmer.org/) 
-7. HMM profiles for both Circular Rep-Containing Single Stranded (CRESS.hmms) and Phixviricota (Phix.hmms) viruses are in the ssDNA HMM files directory
+```
+hmmpress *.HMM
+```
+
+This will create a set of files with extensions: <hmmfile>.h3m <hmmfile>.h3i <hmmfile>.h3f and <hmmfile>.h3p
+
+
+
+Once done users may execute the crAssZA.sh script as follows: 
+
+```
+(crAss)[user@machine007]$ ./crAss.sh
+```
+
+## Output
+
+Once executed, the script will run for a few seconds and set of output files will be generated. These will have extentions *faa and *hmmout that may require further manual inspection.
+
 
