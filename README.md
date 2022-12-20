@@ -11,7 +11,7 @@ This repo contains the HMMs for hallmarks genes (MCP, Portal, and TerL) used for
 
 For the script to run successfully users need to install both [Prodigal](https://github.com/hyattpd/Prodigal) and [HMMER](http://hmmer.org/) beforehand.
 
-To test if all dependencies are installed and executable, users may run the crAss.sh script using these [HMM profiles](https://github.com/SAmicrobiomes/crAssZA/tree/main/HMM%20profiles), as well as this [contig file] (with .fasta extension)(https://github.com/SAmicrobiomes/crAssZA/tree/main/example%20files). Please make sure that all these files are in the same directory. Note that the HMM profiles require to get converted to binary compressed datafiles using hmmpress, using the following command:
+To test if all dependencies are installed and executable, users may run the crAss.sh script using these [HMM profiles](https://github.com/SAmicrobiomes/crAssZA/tree/main/HMM%20profiles), as well as this [contig file](https://github.com/SAmicrobiomes/crAssZA/tree/main/example%20files) with .fasta extension. Please make sure that all these files are in the same directory. Note that the HMM profiles require to get converted to binary compressed datafiles using hmmpress, using the following command:
 
 ```
 hmmpress *.HMM
