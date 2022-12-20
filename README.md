@@ -5,7 +5,7 @@
 
 ## About
 
-This repo provides [HMMs](https://github.com/SAmicrobiomes/crAssZA/tree/main/HMM%20profiles) for hallmarks genes (MCP, Portal, and TerL) as well as a basic [bash script](https://github.com/SAmicrobiomes/crAssZA/tree/main/script) (crAss.sh) that we used in our recent study to search for crAss-like phages. These can easily be used to search through their metagenomes/contigs for the presence of putative crAssphages. The provided script will be updated on a regular basis, and will soon be provided in the form of a nextflow pipeline.
+This repo provides [HMMs](https://github.com/SAmicrobiomes/crAssZA/tree/main/HMM%20profiles) for hallmarks genes (MCP, Portal, and TerL) as well as a basic [bash script](https://github.com/SAmicrobiomes/crAssZA/tree/main/script) (crAss.sh) that we used in our recent study to search for crAss-like phages. These can easily be used to search through metagenomes/contigs for the presence of putative crAssphages using just as single command (see below). The provided script will be updated on a regular basis, and will soon be provided in the form of a nextflow pipeline.
 
 ## Usage
 
